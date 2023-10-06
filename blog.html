@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Blog</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="keywords" content="Mandela Samuel, mandela samuel" />
+    <meta name="description" content="I am currently running a blog that joins together african digital artists. Check it out on http://www.mandelasamuel.wordpress.com/ so we can share ideas in art to expand the knowledge base, solve problems and more so link to one another." />
+    <meta name="author" content="Auxi LaryB" />
+    <meta name="copyright" content="mandelasamuel" />	  
+    <link  rel="stylesheet" media="screen" type="text/css" href="css/home.css" />
+    
+	<script type="text/javascript" src="js/jquery_1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$("body").css("display", "none");
+			$("body").fadeIn(2000);
+			$('body').css('background', 'url(img/about_me.jpg) no-repeat');
+			$("#transition").click(function(event){
+				event.preventDefault();
+				linkLocation = this.href;
+				$("body").fadeOut(200, redirectPage);      
+				});
+				
+			function redirectPage() {
+			window.location = linkLocation;
+			}
+		});
+    </script>
+</head>
+<body>
+    <div class="social">
+      <ul>
+        <li><a href="http://www.facebook.com/mandela.samuel.9?ref=tn_tnmn" target="_blank" class="fb"></a></li>
+          <li><a href="https://twitter.com/MandelaSamuel" target="_blank" class="twitter"></a></li>
+            <li><a href="http://vimeo.com/user8733983" target="_blank" class="vimeo"></a></li>
+        <li><a href="http://mandelasamuel.wordpress.com/" target="_blank" class="rss"></a></li>
+        </ul>
+    </div>
+    <div id="wrapper">
+    	<div id="redlabel2">
+   			 <strong> I WRITE ABOUT ART </strong>
+    	</div>
+    <div id="content">
+    	<div class="info_blog">
+   			 I am currently running a blog that joins together african digital artists. <br />Check it out <a href="http://mandelasamuel.wordpress.com/" />here</a> so that we can expand our knowledge base in art, solve problems and more so link to one another.
+    	</div>
+    	</div>
+    <div id="menu_blog">
+  <ul id="sdt_menu" class="sdt_menu">
+        <li>
+            <a href="index.html" id="transition"  >
+            <img src="img/profile.jpg" alt="Mandela Samuel" />
+                <span class="sdt_active"></span>
+                <span class="sdt_wrap">
+                    <span class="sdt_link">Home</span>
+                    <span class="sdt_descr">Welcome to my site</span>
+                </span>
+            </a>
+            <div class="sdt_box">
+                    <a href="about.html">about me</a>
+                   <span class="sdt_descr">GET TO KNOW ME</span>
+            </div>
+    </li>
+       
+        <li>
+           <a href="film_making.html" id="transition" >
+                <img src="img/riverinhear.jpg" alt="River In the Heart" />
+                <span class="sdt_active"></span>
+                <span class="sdt_wrap">
+                    <span class="sdt_link">Film making</span>
+                    <span class="sdt_descr">I make films</span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="photography.html" id="transition" >
+                <img src="img/photos.jpg" alt="Photography" />
+                <span class="sdt_active"></span>
+                <span class="sdt_wrap">
+                    <span class="sdt_link">Photos</span>
+                    <span class="sdt_descr">i take photos</span>
+                </span>
+            </a>
+            <div class="sdt_box">
+                    <a href="graphics.html">Graphics</a>
+                   <span class="sdt_descr">I ALSO DO GRAPHICS</span>
+            </div>
+        </li>
+         <li>
+            <a href="music.html" id="transition">
+                <img src="img/profile.jpg" alt="Mandela Samuel" />
+                <span class="sdt_active"></span>
+                <span class="sdt_wrap">
+                    <span class="sdt_link">MUSIC</span>
+                    <span class="sdt_descr">i like music too</span>
+                </span>
+            </a>
+            
+    </li> <li>
+            <a href="blog.html" id="transition" class="active">
+                <img src="img/blog.png" alt="Msaani Blog" />
+                <span class="sdt_active"></span>
+                <span class="sdt_wrap">
+                    <span class="sdt_link">Blog</span>
+                    <span class="sdt_descr">I write about art</span>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="clients.html" id="transition">
+                <img src="img/clients.png" alt="Clients" />
+                <span class="sdt_active"></span>
+                <span class="sdt_wrap">
+                    <span class="sdt_link">CLIENTS</span>
+                    <span class="sdt_descr">People i work with</span>
+                </span>
+            </a>
+            <div class="sdt_box">
+                    <a href="contact.html">Contact me</a>
+                   <span class="sdt_descr">FIND ME</span>
+            </div>
+        </li>
+      </ul>
+ </div>
+ </div>
+<script type="text/javascript" src="js/jquery_1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+             $(function() {
+                $('#sdt_menu > li').bind('mouseenter',function(){
+					var $elem = $(this);
+					$elem.find('img')
+						 .stop(true)
+						 .animate({
+							'width':'160px',
+							'height':'160px',
+							'left':'0px'
+						 },400,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_wrap')
+					     .stop(true)
+						 .animate({'top':'80px'},500,'easeOutBack')
+						 .andSelf()
+						 .find('.sdt_active')
+					     .stop(true)
+						 .animate({'height':'80px'},300,function(){
+						var $sub_menu = $elem.find('.sdt_box');
+						if($sub_menu.length){
+							var left = '160px';
+							if($elem.parent().children().length == $elem.index()+1)
+								left = '-160px';
+							$sub_menu.show().animate({'left':left},200);
+						}	
+					});
+				}).bind('mouseleave',function(){
+					var $elem = $(this);
+					var $sub_menu = $elem.find('.sdt_box');
+					if($sub_menu.length)
+						$sub_menu.hide().css('left','0px');
+					
+					$elem.find('.sdt_active')
+						 .stop(true)
+						 .animate({'height':'0px'},300)
+						 .andSelf().find('img')
+						 .stop(true)
+						 .animate({
+							'width':'0px',
+							'height':'0px',
+							'left':'60px'},400)
+						 .andSelf()
+						 .find('.sdt_wrap')
+						 .stop(true)
+						 .animate({'top':'10px'},500);
+				});
+            });
+        </script>
+     
+</body>
+</html>
